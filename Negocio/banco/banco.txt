@@ -1,0 +1,16 @@
+
+
+CREATE TABLE material(
+    id_material int(4) AUTO_INCREMENT,
+    material varchar(40) not null, -- campo não nulo, ou seja, PRECISA ser informao algo
+    estabelecimento varchar(25) not null,
+    preco float(3,2) not null,
+    quantidade int(3) not null,
+    total float(3,2) not null,
+    data_compra date not null,
+    registro date not null,
+    PRIMARY KEY(id_material)
+    );
+
+    ALTER TABLE material ADD COLUMN registro date;
+    
